@@ -23,10 +23,7 @@ def fetching_By_Multiprocess(link):
       os.makedirs(handle + contest)
 
     next_link = re.search('href="(.*)"', link).group(1)
-    
-    nxt_url = codechef + next_link
-    #print(nxt_url)
-    
+    nxt_url = codechef + next_link    
     rqt = req.get(nxt_url)    
     soup = BeautifulSoup(rqt.content,'lxml')
     t = soup.find(href=re.compile("/viewsolution"))
@@ -91,7 +88,6 @@ def codechef_download(request, Handle_name):
       r = req.get(url)
       soup=BeautifulSoup(r.content, 'lxml')
 
-
       t = soup.find('section', class_ = 'rating-data-section problems-solved')
       link = t.findAll('a')
       Links = []
@@ -109,5 +105,5 @@ def codechef_download(request, Handle_name):
  
 
 if __name__ == '__main__':
-  handle = 'anushi' #Write down your handle name
+  handle = '' #Write down your handle name
   codechef_download(requests, handle)
