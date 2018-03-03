@@ -44,7 +44,7 @@ def codechef_login(req, link):
 def codechef_logout(req, link):
 	page = req.get(link)
 	if page.status_code == 200:
-		print("Congrats! Your session has been Successfully logged out")
+		print("Your session has been Successfully Logged Out")
 	else:
 		print ("Logged out messed up at some point")
 
