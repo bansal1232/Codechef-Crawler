@@ -34,6 +34,8 @@ Before running any of above script, you must be assure that you have installed a
 
 ## How to Use
 
-Open `conf.py`. Assign your codechef **handle** and your **password** to `handle` and `pass_val` variables respectively.
+Open `conf.py`. Assign your codechef **handle** and your **password** to `handle` and `pass_val` variables respectively. If you want to download other handle's solutions, then you don't need to assign anything in `pass_val` variable.
 
-Now you can run the script `crawl.py`, and then wait untill all problems are downloaded.
+Now you can run the script `crawl.py`, and then wait until all problems are downloaded.
+
+**Please push any changes or bug if you found while executing this script.**
