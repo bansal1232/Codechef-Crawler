@@ -1,4 +1,5 @@
 # README
+### Due to recent changes in UI and strict authentication in codechef, this project is not working
 
 Here are the python scripts I used to fetch all my solutions on [Codechef]
 and store them locally with a well-structured manner.
